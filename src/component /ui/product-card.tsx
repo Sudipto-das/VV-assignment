@@ -18,7 +18,7 @@ const ProductCard = ({
   image,
 }: ProductCardProps) => {
   return (
-    <div className="w-full sm:w-64 md:w-72 flex-shrink-0 bg-white shadow-sm hover:shadow-md transition-shadow">
+    <div className="w-full sm:w-64 md:w-72 flex-shrink-0 bg-white shadow-sm hover:shadow-md transition-shadow font-montserrat">
       {/* Product Image with badge + wishlist */}
       <div className="relative w-full h-48 sm:h-56 md:h-64 bg-gray-100 flex items-center justify-center overflow-hidden">
         {/* Badge */}

@@ -1,8 +1,7 @@
-import { ChevronDown, Menu } from "lucide-react";
+import { ChevronDown, Menu, ShoppingBag, Heart } from "lucide-react";
 import { useEffect, useState } from "react";
 import DropdownList from "./ui/dropdownlist";
 import Sidebar from "./sidebar";
-
 
 const Navbar = () => {
   const [timeLeft, setTimeLeft] = useState({
@@ -104,14 +103,28 @@ const Navbar = () => {
               </a>
             </nav>
 
-            {/* Desktop Login/Register */}
-            <div className="hidden md:flex items-center space-x-3">
-              <button className="bg-[#FF8F9D] hover:bg-pink-500 text-white px-6 py-1 transition-colors">
-                LOGIN
-              </button>
-              <button className="border border-[#FF8F9D] text-[#FF8F9D] hover:bg-pink-50 px-6 py-1 transition-colors">
-                REGISTER
-              </button>
+            {/* Right section */}
+            <div className="flex items-center space-x-4">
+              {/* Mobile Icons */}
+              <div className="flex space-x-4 md:hidden">
+                <button className="text-gray-700 hover:text-pink-500">
+                <Heart size={24} />
+                </button>
+                <button className="text-gray-700 hover:text-pink-500">
+                  
+                  <ShoppingBag size={24} />
+                </button>
+              </div>
+
+              {/* Desktop Login/Register */}
+              <div className="hidden md:flex items-center space-x-3">
+                <button className="bg-[#FF8F9D] hover:bg-pink-500 text-white px-6 py-1 transition-colors">
+                  LOGIN
+                </button>
+                <button className="border border-[#FF8F9D] text-[#FF8F9D] hover:bg-pink-50 px-6 py-1 transition-colors">
+                  REGISTER
+                </button>
+              </div>
             </div>
           </div>
         </div>
